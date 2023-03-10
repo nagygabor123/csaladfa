@@ -1,3 +1,4 @@
+//segíts már mert elakadtam nem tudom mi a hiba mondd meg és kijavítom xd
 drop table if exists hazassag;
 drop table if exists hazastars;
 drop table if exists szemely;
