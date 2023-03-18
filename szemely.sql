@@ -1,30 +1,30 @@
 DROP TABLE IF EXISTS  szemely;
 CREATE TABLE szemely(id  INTEGER PRIMARY KEY AUTOINCREMENT, csaladnev TEXT,  keresztnev TEXT, szuletes TEXT, szulhey TEXT, foglalkozas TEXT);
 
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Kiss', 'Ároád', '1950-01-10', 'Buda', 'fazekas');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Nagy' ,'Zoltán', '1950-10-01', 'Pest', 'felnőtt ipar');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Joó', 'Marian', '1950-12-01', 'Kecskemét', 'elnök');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Eleben' ,'Elemer', '1950-11-141', 'Kuskunfélegyháza', 'kukás');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Kiss', 'Klaudia', '1950-01-10', 'Kuskunfélegyháza', 'fazekas');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Nagyné' ,'Mária', '1950-01-10', 'Győr', 'énekes');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Sárkány', 'Ibolya', '1950-01-10', 'Miskolc', 'koldus');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Zsebes' ,'Elemer', '1950-01-10', 'Debrecen', 'tolvaj');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Fazekas', 'István', '1950-01-10', 'Debrecen', 'ápoló');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Nagy' ,'Máté', '1950-01-10', 'Debrecen', 'szakmunkás');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Keser', 'Demeter', '1950-01-10', 'Arad', 'katona');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Aba' ,'Amádé', '1950-01-10', 'Arad', 'lakatos');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('rgr', 'drgrg', '1950-01-10', 'Buda', 'fazekas');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('drgrg' ,'drgrg', '1950-01-10', 'Pest', 'felnőtt ipar');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('drgrdgr', 'rgdrgdrg', '1950-01-10', 'Kecskemét', 'elnök');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Edrgrgleben' ,'drggrg', '1950-01-10', 'Kuskunfélegyháza', 'kukás');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('drgrgr', 'drgrg', '1950-01-10', 'Kuskunfélegyháza', 'fazekas');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Nadrgrggyné' ,'drgrg', '1950-01-10', 'Győr', 'énekes');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('drgrg', 'drgg', '1950-01-10', 'Miskolc', 'koldus');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('drgrg' ,'drgrgds', '1950-01-10', 'Debrecen', 'tolvaj');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Fazekas', 'ddrdrgrdgrdg', '1950-01-10', 'Debrecen', 'ápoló');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Nadrgrggy' ,'Máté', '1950-01-10', 'Debrecen', 'szakmunkás');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Keddrgrser', 'Demeter', '1950-01-10', 'Arad', 'katona');
-INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Aba' ,'Amdrgrggádé', '1950-01-10', 'Arad', 'lakatos');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Kiss', 'Árpád', '1990-01-01', 'Buda', 'fazekas');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Nagy' ,'Erika', '1970-02-23', 'Pest', 'felnőtt ipar');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Eleben', 'Elemer', '1932-03-30', 'Kecskemét', 'elnök');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Markáns' ,'eszter', '1912-04-31', 'Kuskunfélegyháza', 'kukás');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Kiss', 'Mihály', '1933-05-17', 'Kuskunfélegyháza', 'fazekas');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Nagyné' ,'Mária', '1953-06-05', 'Győr', 'énekes');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Sárkány', 'Zoltán', '1927-07-07', 'Miskolc', 'koldus');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Zsebes' ,'Klaudia', '19573-08-09', 'Debrecen', 'tolvaj');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Fazekas', 'István', '1902-09-13', 'Debrecen', 'ápoló');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Hunyó' ,'Marcsi', '1959-10-26', 'Debrecen', 'szakmunkás');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Keser', 'Demeter', '1951-11-21', 'Arad', 'katona');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Aba' ,'Ilona', '1914-12-27', 'Arad', 'lakatos');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Víz', 'Elek', '1942-11-28', 'Buda', 'fazekas');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Dobrev' ,'Klára', '1948-10-29', 'Pest', 'felnőtt ipar');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Francia', 'Ferenc', '1969-09-30', 'Kecskemét', 'elnök');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Magyar' ,'Mercedes', '1923-08-26', 'Kuskunfélegyháza', 'kukás');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Koza', 'Dominik', '1932-07-02', 'Kuskunfélegyháza', 'fazekas');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Füzesi' ,'Csilla', '1937-06-05', 'Győr', 'énekes');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Csavar', 'Húzó', '1966-05-19', 'Miskolc', 'koldus');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Jánosi' ,'Eriks', '1955-04-18', 'Debrecen', 'tolvaj');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Fazekas', 'Csaba', '1954-03-22', 'Debrecen', 'ápoló');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Fazekas' ,'Juliska', '1937-02-24', 'Debrecen', 'szakmunkás');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Tposó', 'Bernadett', '1946-01-27', 'Arad', 'katona');
+INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Kis' ,'Emese', '1977-12-16', 'Arad', 'lakatos');
 
 
 
