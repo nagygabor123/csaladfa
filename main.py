@@ -42,6 +42,7 @@ while szemely =="":
     if csaladn == szemelyek[i]['csaladnev'] and keresztn == szemelyek[i]['keresztnev']:
       print(f"")
       print(f"{szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}) - adatlapja:")
+      print(f"\t|-->{szemelyek[i]['foglalkozas']}")
       szemely = szemelyek[i]['csaladnev']+szemelyek[i]['keresztnev']
       sorszam = szemelyek[i]['id']
 
@@ -128,46 +129,46 @@ if gyerek == "elso":
       #Szülők-apa:
       if sorszam == szulok[j]['elsogyerek'] and szulok[j]['apa'] == szemelyek[i]['id']:
         print(f"\t˙----> Szülők: ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
-        print(f"\t\t|--> apa: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+        print(f"\t\t|--> apa: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
         apasorszam = szemelyek[i]['id']
         #Apa-testvere:
         for i in range(len(szemelyek)):
           for j in range(len(szulok)):
             if sorszam == szulok[j]['elsogyerek'] and szulok[j]['masodikgyerek'] == szemelyek[i]['id']:
-              print(f"\t\t˙----> apatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t˙----> apatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
             if sorszam == szulok[j]['masodikgyerek'] and szulok[j]['elsogyerek'] == szemelyek[i]['id']:
-              print(f"\t\t˙----> apatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t˙----> apatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
         print(f"\t\t|\t|")
         #Nagyszülők-apa:
         for i in range(len(szemelyek)):
           for j in range(len(szulok)):
             if apasorszam == szulok[j]['elsogyerek'] and szulok[j]['apa'] == szemelyek[i]['id']:
               print(f"\t\t|\t˙--> nagyszülők: ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
-              print(f"\t\t|\t\t\t|--> apa: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t|\t\t\t|--> apa: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
             if apasorszam == szulok[j]['elsogyerek'] and szulok[j]['anya'] == szemelyek[i]['id']:
-              print(f"\t\t|\t\t\t˙--> anya: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t|\t\t\t˙--> anya: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
 
       #Szülők-anya:
       if sorszam == szulok[j]['elsogyerek'] and szulok[j]['anya'] == szemelyek[i]['id']:
         print(f"\t\t|")
-        print(f"\t\t|--> anya: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+        print(f"\t\t|--> anya: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
         anyasorszam = szemelyek[i]['id']
         #Anya-testvére:
         for i in range(len(szemelyek)):
           for j in range(len(szulok)):
             if sorszam == szulok[j]['elsogyerek'] and szulok[j]['masodikgyerek'] == szemelyek[i]['id']:
-              print(f"\t\t˙----> anyatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t˙----> anyatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
             if sorszam == szulok[j]['masodikgyerek'] and szulok[j]['elsogyerek'] == szemelyek[i]['id']:
-              print(f"\t\t˙----> anyatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t˙----> anyatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
         print(f"\t\t\t|")
         #Nagyszülők-anya:
         for i in range(len(szemelyek)):
           for j in range(len(szulok)):
             if anyasorszam == szulok[j]['elsogyerek'] and szulok[j]['apa'] == szemelyek[i]['id']:
               print(f"\t\t\t˙--> nagyszülők: ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
-              print(f"\t\t\t\t\t|--> apa: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t\t\t\t|--> apa: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
             if anyasorszam == szulok[j]['elsogyerek'] and szulok[j]['anya'] == szemelyek[i]['id']:
-              print(f"\t\t\t\t\t˙--> anya: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t\t\t\t˙--> anya: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
 
 
 if gyerek == "masod":
@@ -179,46 +180,46 @@ if gyerek == "masod":
       #Szülők-apa:
       if sorszam == szulok[j]['masodikgyerek'] and szulok[j]['apa'] == szemelyek[i]['id']:
         print(f"\t˙----> Szülők: ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
-        print(f"\t\t|--> apa: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+        print(f"\t\t|--> apa: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
         apasorszam = szemelyek[i]['id']
         #Apa-testvere:
         for i in range(len(szemelyek)):
           for j in range(len(szulok)):
             if sorszam == szulok[j]['masodikgyerek'] and szulok[j]['elsogyerek'] == szemelyek[i]['id']:
-              print(f"\t\t˙----> apatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t˙----> apatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
             if sorszam == szulok[j]['elsogyerek'] and szulok[j]['masodikgyerek'] == szemelyek[i]['id']:
-              print(f"\t\t˙----> apatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t˙----> apatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
         print(f"\t\t|\t|")
         #Nagyszülők-apa:
         for i in range(len(szemelyek)):
           for j in range(len(szulok)):
             if apasorszam == szulok[j]['masodikgyerek'] and szulok[j]['apa'] == szemelyek[i]['id']:
               print(f"\t\t|\t˙--> nagyszülők: ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
-              print(f"\t\t|\t\t\t|--> apa: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t|\t\t\t|--> apa: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
             if apasorszam == szulok[j]['masodikgyerek'] and szulok[j]['anya'] == szemelyek[i]['id']:
-              print(f"\t\t|\t\t\t˙--> anya: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t|\t\t\t˙--> anya: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
 
       #Szülők-anya:
       if sorszam == szulok[j]['masodikgyerek'] and szulok[j]['anya'] == szemelyek[i]['id']:
         print(f"\t\t|")
-        print(f"\t\t|--> anya: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+        print(f"\t\t|--> anya: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
         anyasorszam = szemelyek[i]['id']
         #Anya-testvere:
         for i in range(len(szemelyek)):
           for j in range(len(szulok)):
             if sorszam == szulok[j]['masodikgyerek'] and szulok[j]['elsogyerek'] == szemelyek[i]['id']:
-              print(f"\t\t˙----> anyatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t˙----> anyatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
             if sorszam == szulok[j]['elsogyerek'] and szulok[j]['masodikgyerek'] == szemelyek[i]['id']:
-              print(f"\t\t˙----> anyatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t˙----> anyatesója: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
         print(f"\t\t\t|")
         #Nagyszülők-anya:
         for i in range(len(szemelyek)):
           for j in range(len(szulok)):
             if anyasorszam == szulok[j]['masodikgyerek'] and szulok[j]['apa'] == szemelyek[i]['id']:
               print(f"\t\t\t˙--> nagyszülők: ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
-              print(f"\t\t\t\t\t|--> apa: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t\t\t\t|--> apa: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
             if anyasorszam == szulok[j]['masodikgyerek'] and szulok[j]['anya'] == szemelyek[i]['id']:
-              print(f"\t\t\t\t\t˙--> anya: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']})")
+              print(f"\t\t\t\t\t˙--> anya: {szemelyek[i]['csaladnev']} {szemelyek[i]['keresztnev']} ({szemelyek[i]['szuletes']} - {szemelyek[i]['szulhey']}, {szemelyek[i]['foglalkozas']})")
 
 ########################################################################################################################
 
