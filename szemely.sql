@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS  szemely;
 CREATE TABLE szemely(id  INTEGER PRIMARY KEY AUTOINCREMENT, csaladnev TEXT,  keresztnev TEXT, szuletes TEXT, szulhey TEXT, foglalkozas TEXT);
-
 INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Kiss', 'Árpád', '1990-01-01', 'Buda', 'fazekas');
 INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Nagy' ,'Erika', '1970-02-23', 'Pest', 'felnőtt ipar');
 INSERT INTO szemely(csaladnev, keresztnev, szuletes, szulhey, foglalkozas) VALUES('Eleben', 'Elemer', '1932-03-30', 'Kecskemét', 'elnök');
